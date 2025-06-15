@@ -1,7 +1,7 @@
 # 🧠 Traya Health  – Personalized Hair Treatment Platform
 
 ## 📌 Description
-This is a scalable backend system for **Traya** a health-tech platform that offers personalized solutions for hair loss. The system mimics the real-world flow from onboarding a customer via a detailed hair test to generating a public report and recommending product purchases – all designed to be scalable, optimized, and production-ready.
+This is a scalable backend system for **Traya** a health-tech platform that offers personalized solutions for hair loss. The system mimics the real-world flow from onboarding a customer via a detailed hair test to generating a public report and recommending product purchases.
 
 ---
 

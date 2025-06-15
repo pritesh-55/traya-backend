@@ -44,7 +44,7 @@ This is a scalable backend system for **Traya** a health-tech platform that offe
 ├── utils/                 # Utility functions
 ├── middlewares/           # Error handling, validations
 ├── services/              # Customized business logic for product recommendations
-├── scripts/               # Sample data for Products
+├── scripts/               # Script to seed Sample data for Products
 ├── server.js              # Server entry point
 ├── .env.example           # Example environment variables
 ├── README.md              # This file

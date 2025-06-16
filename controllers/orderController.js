@@ -79,12 +79,12 @@ exports.getOrder = async (req, res, next) => {
       .populate("orderItems.product")
       .lean();
 
-      if (!order) throw new ApiError(404, "Order not found");
-      
-    order.orderItems = order.orderItems.map(item => ({
+    if (!order) throw new ApiError(404, "Order not found");
+
+    order.orderItems = order.orderItems.map((item) => ({
       ...item.product,
       price: item.priceAtOrderTime, // Overwrite current prices with order-time prices
-      quantity: item.quantity
+      quantity: item.quantity,
     }));
 
     res.status(200).json({

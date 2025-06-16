@@ -27,7 +27,7 @@ exports.submitHairTest = async (req, res, next) => {
             (error, result) => {
               if (error) reject(error);
               else resolve(result.secure_url);
-            }
+            },
           );
           uploadStream.end(scalpImage.buffer);
         });
@@ -35,7 +35,7 @@ exports.submitHairTest = async (req, res, next) => {
         throw new ApiError(500, "Image upload failed");
       }
     }
-    
+
     // 2. Create/Update User
     const userData = req.body.user;
     let user = await User.findOneAndUpdate(

@@ -4,9 +4,9 @@ const parsePayload = (req, res, next) => {
       req.body = JSON.parse(req.body.payload);
       next();
     } catch (err) {
-      return res.status(400).json({ 
+      return res.status(400).json({
         error: "Invalid JSON payload",
-        details: err.message 
+        details: err.message,
       });
     }
   } else {

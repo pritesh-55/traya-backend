@@ -85,7 +85,7 @@ npm start
 
 ---
 
-## ⚙️ Scalability Considerations (To handle million of users)
+## ⚙️ Scalability Considerations (To handle millions of users)
 
 ### 1. Latency Optimizations
 - Currently we are waiting for image being uploaded, further optimization we can decouple image upload to a background process.
